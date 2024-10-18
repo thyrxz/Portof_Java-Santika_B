@@ -3,11 +3,11 @@
 }
 
 body {
-  min-height: 3000px;
+  min-height: 2000px;
 }
 .custom-thumbnail {
-  background-color: blueviolet; /* Warna latar belakang ungu */
-  border-color: blueviolet; /* Warna border ungu */
+  background-color: blueviolet;
+  border-color: blueviolet;
 }
 section.Jumbotron svg {
   margin-bottom: -1px;
