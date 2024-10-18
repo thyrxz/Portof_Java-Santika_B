@@ -1,0 +1,50 @@
+:root {
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 3000px;
+}
+.custom-thumbnail {
+  background-color: blueviolet; /* Warna latar belakang ungu */
+  border-color: blueviolet; /* Warna border ungu */
+}
+section.Jumbotron svg {
+  margin-bottom: -1px;
+}
+
+.Jumbotron {
+  padding-top: 4.5rem;
+}
+
+#About {
+  background-color: #7f32da;
+  color: white;
+}
+
+.carousel-item {
+  padding: 15px 0;
+}
+
+.carousel-inner .row {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-item .card {
+  margin: 15px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.carousel-item .card img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: auto;
+}
+
+.carousel-item .card:hover {
+  transform: translateY(-5px);
+}

@@ -1,35 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>WEBLAYOUT</title>
-    <style type="text/css">
-        @import url("Tgs6.css");
-    </style>
-</head>
-<body>
-    <div class="header">
-        <h1>Jakarta</h1>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portofolio | Java Santika</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- CSS -->
+  </head>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm" style="background-color: blueviolet">
+      <div class="container">
+        <a class="navbar-brand" href="#">Java Santika</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Jumbotron -->
+    <section class="Jumbotron text-center">
+      <img src="img/java.jpg" class="rounded-circle mb-2 img-thumbnail custom-thumbnail" alt="Java Santika" width="170" />
+      <h1>Java Santika</h1>
+      <p>Mahasiswa</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#7f32da"
+          fill-opacity="1"
+          d="M0,224L48,197.3C96,171,192,117,288,106.7C384,96,480,128,576,117.3C672,107,768,53,864,42.7C960,32,1056,64,1152,117.3C1248,171,1344,245,1392,282.7L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Jumbotron -->
+
+    <!-- About -->
+    <section id="About">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col mb-3">
+            <h2>About Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center text-justify">
+          <div class="col-4">
+            <p>
+              Saya Java Santika, seorang mahasiswi semester 4 Program Studi Teknik Multimedia Digital di Politeknik Negeri Jakarta. Minat utama saya terletak pada karier di bidang Desain Antarmuka Pengguna (UI/UX) dan Pengembangan
+              Permainan. Keinginan saya untuk mengejar jalur ini
+            </p>
+          </div>
+          <div class="col-4">
+            <p>
+              didorong oleh minat mendalam terhadap mata kuliah terkait yang telah saya pelajari hingga saat ini. Hal ini mendorong saya untuk mengambil langkah lebih lanjut dengan berpartisipasi dalam kompetisi yang relevan dengan kedua
+              bidang tersebut.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#7f32da"
+        fill-opacity="1"
+        d="M0,256L48,256C96,256,192,256,288,229.3C384,203,480,149,576,149.3C672,149,768,203,864,192C960,181,1056,107,1152,112C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+      ></path>
+    </svg>
+    <!-- About -->
+
+ <!-- My Project -->
+<section id="MyProject" class="container my-5">
+  <h2 class="myp text-center">My Projects</h2>
+  
+  <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/Screenshot 2024-10-17 211512.png" alt="Redesign Chat GPT" />
+              <div class="card-body">
+                <span class="badge bg-secondary">UI/UX</span>
+                <h5 class="card-title">Redesign Chat GPT</h5>
+                <p class="card-text">
+                  Proyek kelompok untuk ujian akhir mata kuliah Pengantar UI/UX semester 2.Dalam meliputi riset dan analisis pengalaman pribadi serta tinjauan pengguna lain di internet, dengan tujuan meningkatkan konsep, fungsi, dan
+                  estetika agar lebih menarik. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/Screenshot 2024-10-17 220343.png" alt="Box From Me" />
+              <div class="card-body">
+                <span class="badge bg-secondary">UI/UX</span>
+                <h5 class="card-title">Aplikasi Box From Me</h5>
+                <p class="card-text">
+                  Proyek kelompok ujian akhir Rekayasa Perangkat Lunak semester 3. "Box From Me" adalah game yang mengajarkan tentang kesehatan mental melalui story quest, menawarkan gameplay intuitif dengan grafis menarik dan warna yang
+                  menenangkan.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/Screenshot 2024-10-17 221340.png" alt="AQUAZONE" />
+              <div class="card-body">
+                <span class="badge bg-secondary">UI/UX</span>
+                <h5 class="card-title">Website Aquazone</h5>
+                <p class="card-text">
+                  Proyek kelompok ujian akhir Pemrograman Website semester 4 menggunakan Figma dan Canva. "AQUAZONE" adalah platform e-commerce untuk penjualan ikan hias dengan fitur utama: “Sign In/Sign Up”, “Home”, “Shop”, “Konsultasi”,
+                  dan “Admin”.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional slides -->
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/another-image-1.png" alt="Project 1" />
+              <div class="card-body">
+                <span class="badge bg-secondary">UI/UX</span>
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">Project 1 description.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/another-image-2.png" alt="Project 2" />
+              <div class="card-body">
+                <span class="badge bg-secondary">UI/UX</span>
+                <h5 class="card-title">Project 2</h5>
+                <p class="card-text">Project 2 description.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/another-image-3.png" alt="Project 3" />
+              <div class="card-body">
+                <span class="badge bg-secondary">UI/UX</span>
+                <h5 class="card-title">Project 3</h5>
+                <p class="card-text">Project 3 description.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <div class="topnav">
-        <nav>
-            <a href="./Um.html">Sejarah</a><br>
-            <a href="./Untitled-1.html">Budaya</a><br>
-            <a href="./Un1.html">Kuliner</a><br>
-            <a href="./Un.html">Masyarakat</a><br>
-        </nav>
-    </div>
-    <div class="content">
-        <h2>Budaya</h2>
-        <p>
-            <img class="floatLeft" src="https://yehezkieltries.files.wordpress.com/2018/02/miris-6-budaya-indonesia-ini-diklaim-ne
-gara-lain-sumber-balimediainfodotcom1.jpg" alt="">
-            Budaya adalah suatu cara hidup yang berkembang dan dimiliki oleh sekelompok orang. Kemudian diwariskan kepada generasi selanjutnya. Budaya itu terbentuk dari beberapa unsur yang rumit. Diantaranya yaitu adat istiadat, bahasa, karya seni, sistem agama dan politik. Bahasa sama halnya dengan budaya, yakni suatu bagian yang tak terpisahkan dari manusia. Oleh sebab itu, banyak dari sekelompok orang cenderung menganggap hal tersebut sebagai sesuatu yang diwariskan secara genetis. Seseorang dapat berkomunikasi dengan orang-orang yang memiliki budaya berbeda dan menyesuaikan perbedaan di antara mereka, membuktikan bahwa budaya bisa dipelajari.
-        </p>
-    </div>
-    <div class="footer">
-        footer text
-    </div>
-    <div class="clear"></div>
-</body>
+
+<!-- End of My Project -->
+
+    <!-- Skill -->
+    <!-- <section id="skill">
+      <div class="container mt-3 text-center"></div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#5000ca"
+        fill-opacity="1"
+        d="M0,64L60,90.7C120,117,240,171,360,192C480,213,600,203,720,197.3C840,192,960,192,1080,170.7C1200,149,1320,107,1380,85.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+      ></path>
+    </svg>
+    
+      <h2 class="text mb-5">Aligning images</h2>
+      <img src="img/Portofolio .png" alt="Paris" width="50" />
+      <img src="img/Portofolio  (1).png" alt="Paris" width="65" />
+      <img src="img/Portofolio  (2).png" alt="Paris" width="60" />
+      <img src="img/Portofolio  (3).png" alt="Paris" width="50" />
+    </div></section> -->
+    <!-- Skill -->
+
+    <!-- Contact -->
+     
+    <!-- Contact -->
+  </body>
 </html>
